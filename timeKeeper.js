@@ -227,4 +227,4 @@ class Task{ //FACTORY FOR BUILDING A NEW TASK OBJECT
 }
 
 //MAIN EXECUTION BEGINS HERE
-document.getElementById('pageTitle').innerHTML += 'v1.9'; //ADD THE VERSION NUMBER TO THE TITLE
+document.getElementById('pageTitle').innerHTML += 'v2.0'; //ADD THE VERSION NUMBER TO THE TITLE
