@@ -102,17 +102,19 @@ const activityManager = (function() {
 //THIS SECTIONS CONTAINS THE MODULES THAT MANAGE THE UI
 const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & IMMEDIATELY INVOKE
 	const codes = [ //ARRAY OF CODE OBJECTS FOR SELECT ELEMENT
-				{name: 'CSD1', description: 'Customer Support', definition: 'To be used for all time spent in front of your customers'},
+//				{name: 'CSD1', description: 'Customer Support', definition: 'To be used for all time spent in front of your customers'},
 				{name: 'CSD2', description: 'Administrative Tasks', optDefault: true, definition: 'To be used to track and report all administrative time: Compliance Training/Time Entry/Performance Review/Manager One on One etc.'},
-				{name: 'CSD4', description: 'Sales Support', definition: 'To be used for time spent helping the Sales organization respond/present in RFPs; participate in orals; general support for sales work.'},
-				{name: 'CSD5', description: 'Internal Delivery Management', definition: 'Working with CC teams to provide support to the customer: Reviewing SLAs/Working with Service Lines for Support/Red Teams/Watchlist, staffing, etc.'},
-				{name: 'CSD6', description: 'CE Duties', definition: 'Preparing and/or Submitting Billing/Revenue Forecasting/When you are actually dual hatted and doing All the CE functions/SFDC Entries/Deal Reviews'},
-				{name: 'CSD7', description: 'Financial Support', definition: 'To be used for all time spent reviewing P&Ls/COPQ/DPA/Financial reporting/ financial analysis/profitibilty meetings/financial watchlist participation/building cost savings plans'},
-				{name: 'Q2204-38728', description: 'Air Products - ISE Upgrade Project Q2204-38728', definition: 'APCI'},
-				{name: 'Q2108-34895', description: 'CCHS - Christiana Renewal Q2108-34895', definition: 'CCHS'},
-				{name: 'Q1905-17031', description: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031', definition: 'STA'},
-				{name: 'Q2208-40208', description: 'Organon & CO - 2023 Data Center renewal Q2208-40208', definition: 'Organon'},
-				{name: 'Q1908-19344', description: 'Alabama Agricultural and Mechanical University - WiFi for Dorms Q1908-19344', definition: 'AAMU'}
+//				{name: 'CSD4', description: 'Sales Support', definition: 'To be used for time spent helping the Sales organization respond/present in RFPs; participate in orals; general support for sales work.'},
+//				{name: 'CSD5', description: 'Internal Delivery Management', definition: 'Working with CC teams to provide support to the customer: Reviewing SLAs/Working with Service Lines for Support/Red Teams/Watchlist, staffing, etc.'},
+//				{name: 'CSD6', description: 'CE Duties', definition: 'Preparing and/or Submitting Billing/Revenue Forecasting/When you are actually dual hatted and doing All the CE functions/SFDC Entries/Deal Reviews'},
+//				{name: 'CSD7', description: 'Financial Support', definition: 'To be used for all time spent reviewing P&Ls/COPQ/DPA/Financial reporting/ financial analysis/profitibilty meetings/financial watchlist participation/building cost savings plans'},
+				{name: 'Q2001-22110', description: 'Air Products - Desktop Support Renewal for 2021-2023 Q2001-22110', definition: '3.2 - Dispatch Shared'},
+				{name: 'Q2104-32702', description: 'Air Products - T&M Rate Card Amendment Q2104-32702', definition: '3.2 - Dispatch Shared'},
+				{name: 'Q2204-38728', description: 'Air Products - ISE Upgrade Project Q2204-38728', definition: '7.3 - Infrastructure Consulting'},
+				{name: 'Q1908-19344', description: 'Alabama Agricultural and Mechanical University - WiFi for Dorms Q1908-19344', definition: '3.1 - Dispatch Dedicated'},
+				{name: 'Q2108-34895', description: 'CCHS - Christiana Renewal Q2108-34895', definition: '3.2 - Dispatch Shared'},
+				{name: 'Q1905-17031', description: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031', definition: '4.2 - End-Point Protection, 7.1 - Microsoft Solutions'},
+				{name: 'Q2208-40208', description: 'Organon & CO - 2023 Data Center renewal Q2208-40208', definition: '5.12 - Staff Aug - Data Center'}
 			];
 	const select = document.getElementById('codeSelect'); //REFERENCE THE SELECT ELEMENT FOR THE CODES
 	const account = document.getElementById('account'); //REFERENCE THE ACCOUNT INPUT ELEMENT
