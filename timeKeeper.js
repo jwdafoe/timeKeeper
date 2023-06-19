@@ -140,7 +140,7 @@ const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & 
 		definitions.style.display = 'none'; //HIDE THE ELEMENT INITIALLY
 	})();
 	function resetForm() { //RESET THE FORM INPUT FIELDS
-		select.selectedIndex = 1; //SET 'CSD2' AS THE DEFAULT SELECTION
+		select.selectedIndex = 0; //SET 'CSD2' AS THE DEFAULT SELECTION
 		account.value = 'Compucom'; //'COMPUCOM' IS DEFAULT ACCOUNT NAME FOR 'CSD2' CODE
 		document.getElementById('notes').value = null;
 		document.getElementById('notes').focus();
