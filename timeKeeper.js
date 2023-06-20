@@ -108,13 +108,13 @@ const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & 
 //				{name: 'CSD5', description: 'Internal Delivery Management', definition: 'Working with CC teams to provide support to the customer: Reviewing SLAs/Working with Service Lines for Support/Red Teams/Watchlist, staffing, etc.'},
 //				{name: 'CSD6', description: 'CE Duties', definition: 'Preparing and/or Submitting Billing/Revenue Forecasting/When you are actually dual hatted and doing All the CE functions/SFDC Entries/Deal Reviews'},
 //				{name: 'CSD7', description: 'Financial Support', definition: 'To be used for all time spent reviewing P&Ls/COPQ/DPA/Financial reporting/ financial analysis/profitibilty meetings/financial watchlist participation/building cost savings plans'},
-				{name: 'Q2001-22110', description: 'Air Products - Desktop Support Renewal for 2021-2023 Q2001-22110', definition: '3.2 - Dispatch Shared'},
-				{name: 'Q2104-32702', description: 'Air Products - T&M Rate Card Amendment Q2104-32702', definition: '3.2 - Dispatch Shared'},
-				{name: 'Q2204-38728', description: 'Air Products - ISE Upgrade Project Q2204-38728', definition: '7.3 - Infrastructure Consulting'},
-				{name: 'Q1908-19344', description: 'Alabama Agricultural and Mechanical University - WiFi for Dorms Q1908-19344', definition: '3.1 - Dispatch Dedicated'},
-				{name: 'Q2108-34895', description: 'CCHS - Christiana Renewal Q2108-34895', definition: '3.2 - Dispatch Shared'},
-				{name: 'Q1905-17031', description: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031', definition: '4.2 - End-Point Protection, 7.1 - Microsoft Solutions'},
-				{name: 'Q2208-40208', description: 'Organon & CO - 2023 Data Center renewal Q2208-40208', definition: '5.12 - Staff Aug - Data Center'}
+				{name: 'Air Products - Desktop Support Renewal for 2021-2023 Q2001-22110', description: '', definition: '3.2 - Dispatch Shared'},
+				{name: 'Air Products - T&M Rate Card Amendment Q2104-32702', description: '', definition: '3.2 - Dispatch Shared'},
+				{name: 'Air Products - ISE Upgrade Project Q2204-38728', description: '', definition: '7.3 - Infrastructure Consulting'},
+				{name: 'Alabama Agricultural and Mechanical University - WiFi for Dorms Q1908-19344', description: '', definition: '3.1 - Dispatch Dedicated'},
+				{name: 'CCHS - Christiana Renewal Q2108-348955', description: '', definition: '3.2 - Dispatch Shared'},
+				{name: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031', description: '', definition: '4.2 - End-Point Protection, 7.1 - Microsoft Solutions'},
+				{name: 'Organon & CO - 2023 Data Center renewal Q2208-40208', description: '', definition: '5.12 - Staff Aug - Data Center'}
 			];
 	const select = document.getElementById('codeSelect'); //REFERENCE THE SELECT ELEMENT FOR THE CODES
 	const account = document.getElementById('account'); //REFERENCE THE ACCOUNT INPUT ELEMENT
