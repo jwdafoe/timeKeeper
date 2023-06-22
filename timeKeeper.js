@@ -19,8 +19,8 @@ function startTask() {
 	const code = document.getElementById('codeSelect').value;
 	const account = document.getElementById('account').value;
 	const notes = document.getElementById('notes').value;
-	if (!account || !notes) { //VALIDATE THAT AN ACCOUNT AND NOTES WERE ENTERED
-		alert('You must enter both an Account name & Comments.');
+	if (!notes) { //VALIDATE THAT NOTES WERE ENTERED
+		alert('You must enter Comments.');
 	} else {
 		activityManager.activityLog.startActivity(code, account, notes);
 	}
@@ -229,4 +229,4 @@ class Task{ //FACTORY FOR BUILDING A NEW TASK OBJECT
 }
 
 //MAIN EXECUTION BEGINS HERE
-document.getElementById('pageTitle').innerHTML += 'v2.0'; //ADD THE VERSION NUMBER TO THE TITLE
+document.getElementById('pageTitle').innerHTML += 'v2.1'; //ADD THE VERSION NUMBER TO THE TITLE
