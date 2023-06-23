@@ -104,7 +104,7 @@ const activityManager = (function() {
 const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & IMMEDIATELY INVOKE
 	const codes = [ //ARRAY OF CODE OBJECTS FOR SELECT ELEMENT
 //				{name: 'CSD1', description: 'Customer Support', definition: 'To be used for all time spent in front of your customers'},
-				{name: 'CSD2', description: 'Administrative Tasks', optDefault: true, definition: 'To be used to track and report all administrative time: Compliance Training/Time Entry/Performance Review/Manager One on One etc.'},
+				{name: 'CSD2 - Compucom', description: 'Administrative Tasks', optDefault: true, definition: 'To be used to track and report all administrative time: Compliance Training/Time Entry/Performance Review/Manager One on One etc.'},
 //				{name: 'CSD4', description: 'Sales Support', definition: 'To be used for time spent helping the Sales organization respond/present in RFPs; participate in orals; general support for sales work.'},
 //				{name: 'CSD5', description: 'Internal Delivery Management', definition: 'Working with CC teams to provide support to the customer: Reviewing SLAs/Working with Service Lines for Support/Red Teams/Watchlist, staffing, etc.'},
 //				{name: 'CSD6', description: 'CE Duties', definition: 'Preparing and/or Submitting Billing/Revenue Forecasting/When you are actually dual hatted and doing All the CE functions/SFDC Entries/Deal Reviews'},
