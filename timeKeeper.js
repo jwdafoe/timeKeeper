@@ -153,7 +153,7 @@ const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & 
 	return {
 		checkSelect: function() { //INITIATED WHEN A SELECT OPTION IS SELECTED
 			const code = select.value;
-			account.value = code === 'CSD2' ? 'Compucom' : null; //IF 'CSD2' IS SELECTED, THEN SET ACCOUNT TO 'Compucom'
+			//account.value = code === 'CSD2' ? 'Compucom' : null; //IF 'CSD2' IS SELECTED, THEN SET ACCOUNT TO 'Compucom'
 		},		
 		resetForm: resetForm,
 /*		toggleDefinitions: function() {
