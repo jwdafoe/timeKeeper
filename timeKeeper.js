@@ -18,7 +18,7 @@ function startTask() {
 	//GET THE VALUES FOR THE FORM INPUTS
 	const code = document.getElementById('codeSelect').value;
 	//const account = document.getElementById('account').value;
-	const account = '';
+	const account = null;
 	const notes = document.getElementById('notes').value;
 	if (!notes) { //VALIDATE THAT NOTES WERE ENTERED
 		alert('You must enter Comments.');
