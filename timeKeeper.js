@@ -17,7 +17,8 @@ $(document).ready(function() {
 function startTask() {
 	//GET THE VALUES FOR THE FORM INPUTS
 	const code = document.getElementById('codeSelect').value;
-	const account = document.getElementById('account').value;
+	//const account = document.getElementById('account').value;
+	const account = null;
 	const notes = document.getElementById('notes').value;
 	if (!notes) { //VALIDATE THAT NOTES WERE ENTERED
 		alert('You must enter Comments.');
@@ -124,7 +125,8 @@ const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & 
 		codes.forEach(function(code) {
 			const opt = document.createElement('option');
 			opt.value = code.name;
-			opt.innerHTML = code.name + ' - ' + code.description;
+			//opt.innerHTML = code.name + ' - ' + code.description;
+			opt.innerHTML = code.name;
 			opt.selected = code.optDefault; //SET ELEMENT TO THIS OPTION IF IT HAS 'optDefault' PROPERTY
 			select.appendChild(opt);
 		})
@@ -142,7 +144,7 @@ const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & 
 	})();
 	function resetForm() { //RESET THE FORM INPUT FIELDS
 		select.selectedIndex = 0; //SET 'CSD2' AS THE DEFAULT SELECTION
-		account.value = 'Compucom'; //'COMPUCOM' IS DEFAULT ACCOUNT NAME FOR 'CSD2' CODE
+		//account.value = 'Compucom'; //'COMPUCOM' IS DEFAULT ACCOUNT NAME FOR 'CSD2' CODE
 		document.getElementById('notes').value = null;
 		document.getElementById('notes').focus();
 	}
