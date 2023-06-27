@@ -30,7 +30,8 @@ function startTask() {
 function buildListItem(code, account, notes, started, total=0) { //FACTORY FOR BUILDING A TASK AS A 'LI' ELEMENT
 	const item = document.createElement('li'); //CREATE THE LIST ITEM
 	item.classList.add('list-group-item');
-	item.innerHTML = `${code} - ${account}: ${notes} <strong>| ${total.toFixed(2)} hrs</strong>`;
+//	item.innerHTML = `${code} - ${account}: ${notes} <strong>| ${total.toFixed(2)} hrs</strong>`;
+	item.innerHTML = `${code}: ${notes} <strong>| ${total.toFixed(2)} hrs</strong>`;
 
 	return item;
 }
@@ -177,7 +178,8 @@ const manageActiveUI = (function() { //INSTANTIATE A MODULE TO MANAGE THE ACTIVE
 	function display(activeObj=activeTask) { //UPDATES THE TASK LOG ELEMENT FOR THE CURRENT/ACTIVE TASK
 		if (activeObj) { //ONLY RUN IF THERE IS AN ACTIVE TASK PRESENT
 			//runningTask.replaceChildren(buildListItem(activeObj.code, activeObj.account, activeObj.notes, activeObj.start));
-			runningTask.innerHTML = `<strong>${activeObj.code} - ${activeObj.account}</strong><br> ${activeObj.notes} started @${activeObj.start.toLocaleString()}`;
+//			runningTask.innerHTML = `<strong>${activeObj.code} - ${activeObj.account}</strong><br> ${activeObj.notes} started @${activeObj.start.toLocaleString()}`;
+			runningTask.innerHTML = `<strong>${activeObj.code}</strong><br> ${activeObj.notes} started @${activeObj.start.toLocaleString()}`;
 		}
 	}
 	display();
