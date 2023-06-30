@@ -31,7 +31,7 @@ function buildListItem(code, account, notes, started, total=0) { //FACTORY FOR B
 	const item = document.createElement('li'); //CREATE THE LIST ITEM
 	item.classList.add('list-group-item');
 //	item.innerHTML = `${code} - ${account}: ${notes} <strong>| ${total.toFixed(2)} hrs</strong>`;
-	item.innerHTML = `${code}: ${notes} <strong>| ${total.toFixed(2)} hrs</strong>`;
+	item.innerHTML = `<strong><i>${code}:</i></strong> ${notes} <strong>| ${total.toFixed(2)} hrs</strong>`;
 
 	return item;
 }
