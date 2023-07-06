@@ -114,10 +114,10 @@ const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & 
 				{name: 'Air Products - T&M Rate Card Amendment Q2104-32702 [3.2 - Dispatch Shared]', description: '', definition: '3.2 - Dispatch Shared'},
 				{name: 'Air Products - ISE Upgrade Project Q2204-38728 [7.3 - Infrastructure Consulting]', description: '', definition: '7.3 - Infrastructure Consulting'},
 				{name: 'Alabama Agricultural and Mechanical University - WiFi for Dorms Q1908-19344 [3.1 - Dispatch Dedicated]', description: '', definition: '3.1 - Dispatch Dedicated'},
-				{name: 'CCHS - Christiana Renewal Q2108-348955 [3.2 - Dispatch Shared]', description: '', definition: '3.2 - Dispatch Shared'},
+				{name: 'CFS-US-CCHS-Q2305-56399 - Christiana Care Health System, Inc. [3.2 - Dispatch Shared]', description: '', definition: '3.2 - Dispatch Shared'},
 				{name: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031 [4.2 - End-Point Protection]', description: '', definition: '1.1 - Staging & Deployment, 1.2 - ITAD & Resell, 1.3 - ITAM, 1.4 - Depot Services, 1.5 - Depot - Transition, 4.2 - End-Point Protection, 4.5 - End Point - Transition, 7.1 - Microsoft Solutions'},
 				{name: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031 [7.1 - Microsoft Solutions]', description: '', definition: '4.2 - End-Point Protection, 7.1 - Microsoft Solutions'},
-				{name: 'Organon & CO - 2023 Data Center renewal Q2208-40208 [5.12 - Staff Aug - Data Center]', description: '', definition: '5.12 - Staff Aug - Data Center'}
+				{name: 'DC-US-STF-AUG-Q2306-61110 - Organon & Co. [5.12 - Staff Aug - Data Center]', description: '', definition: '5.12 - Staff Aug - Data Center'}
 			];
 	const select = document.getElementById('codeSelect'); //REFERENCE THE SELECT ELEMENT FOR THE CODES
 	const account = document.getElementById('account'); //REFERENCE THE ACCOUNT INPUT ELEMENT
