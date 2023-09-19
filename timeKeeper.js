@@ -104,20 +104,18 @@ const activityManager = (function() {
 //THIS SECTIONS CONTAINS THE MODULES THAT MANAGE THE UI
 const manageForm = (function() { //INSTANTIATE A MODULE FOR MANAGING THE FORM & IMMEDIATELY INVOKE
 	const codes = [ //ARRAY OF CODE OBJECTS FOR SELECT ELEMENT
-//				{name: 'CSD1', description: 'Customer Support', definition: 'To be used for all time spent in front of your customers'},
-				{name: 'CSD2 - Compucom', description: 'Administrative Tasks', optDefault: true, definition: 'To be used to track and report all administrative time: Compliance Training/Time Entry/Performance Review/Manager One on One etc.'},
-//				{name: 'CSD4', description: 'Sales Support', definition: 'To be used for time spent helping the Sales organization respond/present in RFPs; participate in orals; general support for sales work.'},
-//				{name: 'CSD5', description: 'Internal Delivery Management', definition: 'Working with CC teams to provide support to the customer: Reviewing SLAs/Working with Service Lines for Support/Red Teams/Watchlist, staffing, etc.'},
-//				{name: 'CSD6', description: 'CE Duties', definition: 'Preparing and/or Submitting Billing/Revenue Forecasting/When you are actually dual hatted and doing All the CE functions/SFDC Entries/Deal Reviews'},
-//				{name: 'CSD7', description: 'Financial Support', definition: 'To be used for all time spent reviewing P&Ls/COPQ/DPA/Financial reporting/ financial analysis/profitibilty meetings/financial watchlist participation/building cost savings plans'},
-				{name: 'Air Products - Desktop Support Renewal for 2021-2023 Q2001-22110 [3.2 - Dispatch Shared]', description: '', definition: '3.2 - Dispatch Shared'},
+				{name: 'CE-PD Unbillable-30001 [CE9 - 30001 Administrative Tasks]', description: 'Administrative Tasks', optDefault: true, definition: 'To be used to track and report all administrative time: Compliance Training/Time Entry/Performance Review/Manager One on One etc...'},
+				{name: 'CE-PD Unbillable-30001 [CE10 - 30001 Financial Support]', description: 'Financial Support', definition: 'To be used for all time spent reviewing P&Ls/COPQ/DPA/Financial reporting/ financial analysis/profitability meetings/financial watchlist participation/building cost savings plans'},
+				{name: 'CE-PD Unbillable-30001 [CE11 - 30001 Sales Support]', description: 'Sales Support', definition: 'To be used for time spent helping the Sales organization respond/present in RFPs; participate in orals; general support for sales work.'},
+				{name: 'CE-PD Unbillable-30001 [CE12 - 30001 Other Unspecified]', description: 'Other Unspecified', definition: 'This is a task bucket to allow for time that should not be allocated to the customer but is not specifically identified like the time options above. This could be bench time or other acceptable unallocated functions.'},
+				{name: 'Air Products - Desktop Support Renewal for 2021-2023 Q2001-22110 [CE8 - Program Management]', description: '', definition: ''},
 				{name: 'Air Products - T&M Rate Card Amendment Q2104-32702 [3.2 - Dispatch Shared]', description: '', definition: '3.2 - Dispatch Shared'},
 				{name: 'Air Products - ISE Upgrade Project Q2204-38728 [7.3 - Infrastructure Consulting]', description: '', definition: '7.3 - Infrastructure Consulting'},
-				{name: 'Alabama Agricultural and Mechanical University - WiFi for Dorms Q1908-19344 [3.1 - Dispatch Dedicated]', description: '', definition: '3.1 - Dispatch Dedicated'},
+//				{name: 'Alabama Agricultural and Mechanical University - WiFi for Dorms Q1908-19344 [3.1 - Dispatch Dedicated]', description: '', definition: '3.1 - Dispatch Dedicated'},
 				{name: 'CFS-US-CCHS-Q2305-56399 - Christiana Care Health System, Inc. [3.2 - Dispatch Shared]', description: '', definition: '3.2 - Dispatch Shared'},
-				{name: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031 [4.2 - End-Point Protection]', description: '', definition: '1.1 - Staging & Deployment, 1.2 - ITAD & Resell, 1.3 - ITAM, 1.4 - Depot Services, 1.5 - Depot - Transition, 4.2 - End-Point Protection, 4.5 - End Point - Transition, 7.1 - Microsoft Solutions'},
-				{name: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031 [7.1 - Microsoft Solutions]', description: '', definition: '4.2 - End-Point Protection, 7.1 - Microsoft Solutions'},
-				{name: 'DC-US-STF-AUG-Q2306-61110 - Organon & Co. [5.12 - Staff Aug - Data Center]', description: '', definition: '5.12 - Staff Aug - Data Center'}
+				{name: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031 [CE8 - Program Management]', description: '', definition: ''}
+//				{name: 'OD - Student Transportation-Infrastructure Modernization Lifecycle - Q1905-17031 [7.1 - Microsoft Solutions]', description: '', definition: '4.2 - End-Point Protection, 7.1 - Microsoft Solutions'}
+//				{name: 'DC-US-STF-AUG-Q2306-61110 - Organon & Co. [5.12 - Staff Aug - Data Center]', description: '', definition: '5.12 - Staff Aug - Data Center'}
 			];
 	const select = document.getElementById('codeSelect'); //REFERENCE THE SELECT ELEMENT FOR THE CODES
 	const account = document.getElementById('account'); //REFERENCE THE ACCOUNT INPUT ELEMENT
